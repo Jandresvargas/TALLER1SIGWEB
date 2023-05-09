@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;1,400");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Shadows+Into+Light&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,8 @@
 
 body {
   margin: 0;
-  text-shadow: #000 0 0 10px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+ 
 }
 
 

@@ -1,20 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Shadows+Into+Light&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
-
-
 body {
-
   color: #212529;
+  line-height: 1.5;
+	font-weight: 400;
   background: #212529;
 }
 
 section {
   overflow: hidden;
 }
+cite {
+	margin-top: auto;
+	font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
 
 .product-hero {
   position: fixed;
@@ -47,7 +51,24 @@ section {
   min-height: 100%;
   height: auto !important;
 }
+.polaroid {
+	width: 75%;
+	max-width: 400px;
+	position: sticky;
+	top: 10vw;
+	box-shadow: 0 0.5vw 1vw 0 rgba(#000, 0.1);
+	&:nth-child(1) {
+		transform: rotate(4deg) translatex(2vw);
+	}
 
+	&:nth-child(2) {
+		transform: rotate(-6deg) translatex(-2vw);
+	}
+
+	&:nth-child(3) {
+		transform: rotate(8deg) translatex(4vw);
+	}
+}
 .product-page {
   position: relative;
   z-index: 200;
@@ -67,30 +88,6 @@ section {
   transition: all 0s ease-in-out;
   margin-bottom: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 *{
   margin:0;
